@@ -26,7 +26,7 @@ Welcome to the **High-Performance Data Processing (HPDP)** class! We are excited
 5. **Student Information Submission** 🔗  
    Once you have been added as a **collaborator** on the GitHub repository, please update your student information:  
    - **Edit** the student information file at: [HPDP Student Information](https://github.com/sean-seah/HPDP/blob/main/2526/student/readme.md)  
-   - Refer to this **example**: [Student Info Sample](https://github.com/sean-seah/HPDP/blob/main/student.md)  
+   - Refer to this **example**: [Student Info Sample](https://github.com/sean-seah/HPDP/blob/main/2425/student/readme.md)  
    - Provide the following details:  
      - **GitHub ID**  
      - **GitHub Profile Link**  
