@@ -35,7 +35,7 @@
 |23 | POH LOK YEE |  |  |  |  |
 |24 | SABRINA HENG WEI QI |  |  |  |  |
 |25 | SAFIYA NURSYAHADAH BINTI MASNOOR |  |  |  |  |
-|26 | TAN ZHI MING |  |  |  |  |
+|26 | TAN ZHI MING |A23CS0189  |https://www.linkedin.com/in/zhimingtan  |https://www.linkedin.com/in/zhimingtan/  |  |
 
 
 ## Contribution 🛠️
