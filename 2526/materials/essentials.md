@@ -12,13 +12,13 @@ Welcome to the **High-Performance Data Processing (HPDP)** class! We are excited
 ## ✅ **Pre-Class Requirements**  
 
 1. **Fill in Your Information** 📝  
-   Please provide your details in the **Google Sheets** document [here](https://liveutm-my.sharepoint.com/:x:/g/personal/shahizan_live_utm_my/IQDlMyKf7p9OSZT8EJh9s3jyAW2mIw-xA6W9CMoRtajwm-Y?e=FBQLL9).  
+   Please provide your details in the **Google Sheets** document [here](https://liveutm-my.sharepoint.com/:x:/g/personal/seahcs_live_utm_my/IQDH7nE_faYnTJMSizOOPGUzAUdTPwnX70AANh9uei0qe8k?e=v8dnzt).  
 
 2. **Star the GitHub Repository** ⭐  
-   As part of our course setup, please **star** the course repository available [here](https://github.com/drshahizan/HPDP). This repository will be our primary resource throughout the course. You will also be added as a collaborator.  
+   As part of our course setup, please **star** the course repository available [here](https://github.com/sean-seah/HPDP). This repository will be our primary resource throughout the course. You will also be added as a collaborator.  
 
 3. **Access Teaching Materials** 📚  
-   All teaching materials will be hosted on **GitHub**. Please follow [this link](https://github.com/drshahizan/HPDP) to access them.  
+   All teaching materials will be hosted on **GitHub**. Please follow [this link](https://github.com/sean-seah/HPDP) to access them.  
 
 4. **Update Your GitHub Profile** 👨‍💻  
    Ensure your **GitHub profile** is up to date with relevant information.  
