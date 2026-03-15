@@ -25,14 +25,14 @@ Welcome to the **High-Performance Data Processing (HPDP)** class! We are excited
 
 5. **Student Information Submission** 🔗  
    Once you have been added as a **collaborator** on the GitHub repository, please update your student information:  
-   - **Edit** the student information file at: [HPDP Student Information](https://github.com/drshahizan/HPDP/blob/main/2526/student/readme.md)  
-   - Refer to this **example**: [Student Info Sample](https://github.com/drshahizan/HPDP/blob/main/student.md)  
+   - **Edit** the student information file at: [HPDP Student Information](https://github.com/sean-seah/HPDP/blob/main/2526/student/readme.md)  
+   - Refer to this **example**: [Student Info Sample](https://github.com/sean-seah/HPDP/blob/main/student.md)  
    - Provide the following details:  
      - **GitHub ID**  
      - **GitHub Profile Link**  
      - **LinkedIn Profile Link**  
      - **Portfolio Link**  
-   - **Create a personal folder** in the directory: [Student Directory](https://github.com/drshahizan/HPDP/tree/main/2526/student).  
+   - **Create a personal folder** in the directory: [Student Directory](https://github.com/sean-seah/HPDP/tree/main/2526/student).  
    - Name the folder using your **GitHub ID** and include your **personal details & portfolio link** inside.  
 
 ## 🎯 **Final Reminder**  
@@ -41,10 +41,10 @@ Please **complete these tasks before our first class**, as they are crucial for 
 We look forward to an exciting and insightful semester ahead 🚀 
 
 ## Contribution 🛠️
-Please create an [Issue](https://github.com/drshahizan/HPDP/issues) for any improvements, suggestions or errors in the content.
+Please create an [Issue](https://github.com/sean-seah/HPDP/issues) for any improvements, suggestions or errors in the content.
 
-You can also contact me using [Linkedin](https://www.linkedin.com/in/drshahizan/) for any other queries or feedback.
+You can also contact me using [Linkedin](https://www.linkedin.com/in/sean-seah-229b5a94/) for any other queries or feedback.
 
-[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fdrshahizan&labelColor=%23697689&countColor=%23555555&style=plastic)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fdrshahizan)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fsean-seah&labelColor=%23697689&countColor=%23555555&style=plastic)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fsean-seah)
 ![](https://hit.yhype.me/github/profile?user_id=81284918)
 
