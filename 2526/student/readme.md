@@ -9,15 +9,15 @@
 
 | No. | Name                                     | ID | Github | Linked in | Portfolio |
 |----:|------------------------------------------|----|:------:|:---------:|:---------:|
-| 0 | Abdul Muhaimin Bin Abdul Razak | Muhaimin005 | [:octocat:](https://github.com/Muhaimin005) | <a href="https://www.linkedin.com/in/abdul-muhaimin-65390b23b"><img src="../../images/linkedin.png" width="24px" height="24px"></a> | <a href="Muhaimin005"><img src="../../images/portfolio.png" width="24px" height="24px"></a> |
-| 1 | Afif Shaqir Irfan Bin Arqam |  |  |  |  |
-| 2 | Ahmad Adib Zikri Bin A. Mazlam |  |  |  |  |
-| 3 | Ahmad Ziyaad Bin Mohd Abbas |  |  |  |  |
-| 4 | Anis Safiyya Binti Janai |  |  |  |  |
-| 5 | Choh Jing Yi |  |  |  |  |
-| 6 | Dheshieghan A/L Saravana Moorthy |  |  |  |  |
-| 7 | Goe Jie Ying |  |  |  |  |
-| 8 | Harini A/P Sangaran |  |  |  |  |
+| 0 | LING YU QIAN | |  |  |  |  |
+| 1 | AIN NURNABILA BINTI MOHD AZHAR |  |  |  |  |
+| 2 | BRENDAN CHIA YAN FEI |  |  |  |  |
+| 3 | CHAU YING JIA |  |  |  |  |
+| 4 | CHERYL CHEONG KAH VOON |  |  |  |  |
+| 5 | CHEW CHIU XIAN |  |  |  |  |
+| 6 | CHUA JIA LIN |  |  |  |  |
+| 7 | DAMIYA AINA BINTI BASIR ABD SHAMMAD |  |  |  |  |
+| 8 | DAYANG FARAH FARZANA BINTI ABANG IDHAM|  |  |  |  |
 | 9 | Iman Abadi Bin Mohd Nizwan |  |  |  |  |
 |10 | Lam Yoke Yu |  |  |  |  |
 |11 | Mohamed Alif Fathi Bin Abdul Latif |  |  |  |  |
