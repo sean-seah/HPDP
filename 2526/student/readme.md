@@ -15,27 +15,28 @@
 | 3 | CHAU YING JIA |  |  |  |  |
 | 4 | CHERYL CHEONG KAH VOON |  |  |  |  |
 | 5 | CHEW CHIU XIAN |  |  |  |  |
-| 6 | CHUA JIA LIN |  |  |  |  |
-| 7 | DAMIYA AINA BINTI BASIR ABD SHAMMAD |  |  |  |  |
-| 8 | DAYANG FARAH FARZANA BINTI ABANG IDHAM|  |  |  |  |
-| 9 | ELIJAH SHE YU SHENG |  |  |  |  |
-|10 | EVELYN GOH YUAN QI |  |  |  |  |
-|11 | FARRA NURZAHIN BINTI ZAHARIL ANUAR |  |  |  |  |
-|12 | GUI KAH SIN |  |  |  |  |
-|13 | JOANNE CHING YIN XUAN |  |  |  |  |
-|14 | LAU YAN KAI |  |  |  |  |
-|15 | LAU YEE WEN |  |  |  |  |
-|16 | LEE YIN SHEN |  |  |  |  |
-|17 | LIM YU HAN |  |  |  |  |
-|18 | LUBNA AL HAANI BINTI RADZUAN |  |  |  |  |
-|19 | NEO LI XIN |  |  |  |  |
-|20 | NUR FIRZANA BINTI BADRUS HISHAM |  |  |  |  |
-|21 | NURAISYAH BINTI MOHD ZIKRE |  |  |  |  |
-|22 | NURUL IKA SYAFINY BINTI AZHAR |  |  |  |  |
-|23 | POH LOK YEE |  |  |  |  |
-|24 | SABRINA HENG WEI QI |  |  |  |  |
-|25 | SAFIYA NURSYAHADAH BINTI MASNOOR |  |  |  |  |
-|26 | TAN ZHI MING |  |  |  |  |
+| 6 | Choh Jing Yi | chohjingyia23cs0296 | [:octocat:](https://github.com/chohjingyia23cs0296) | <a href="https://www.linkedin.com/in/chohjingyi"><img src="../../images/linkedin.png" width="24px" height="24px"></a> | <a href="https://github.com/chohjingyia23cs0296"><img src="../../images/portfolio.png" width="24px" height="24px"></a> |
+| 7 | CHUA JIA LIN |  |  |  |  |
+| 8 | DAMIYA AINA BINTI BASIR ABD SHAMMAD |  |  |  |  |
+| 9 | DAYANG FARAH FARZANA BINTI ABANG IDHAM|  |  |  |  |
+| 10 | ELIJAH SHE YU SHENG |  |  |  |  |
+|11 | EVELYN GOH YUAN QI |  |  |  |  |
+|12 | FARRA NURZAHIN BINTI ZAHARIL ANUAR |  |  |  |  |
+|13 | GUI KAH SIN |  |  |  |  |
+|14 | JOANNE CHING YIN XUAN |  |  |  |  |
+|15 | LAU YAN KAI |  |  |  |  |
+|16 | LAU YEE WEN |  |  |  |  |
+|17 | LEE YIN SHEN |  |  |  |  |
+|18 | LIM YU HAN |  |  |  |  |
+|19 | LUBNA AL HAANI BINTI RADZUAN |  |  |  |  |
+|20 | NEO LI XIN |  |  |  |  |
+|21 | NUR FIRZANA BINTI BADRUS HISHAM |  |  |  |  |
+|22 | NURAISYAH BINTI MOHD ZIKRE |  |  |  |  |
+|23 | NURUL IKA SYAFINY BINTI AZHAR |  |  |  |  |
+|24 | POH LOK YEE |  |  |  |  |
+|25 | SABRINA HENG WEI QI |  |  |  |  |
+|26 | SAFIYA NURSYAHADAH BINTI MASNOOR |  |  |  |  |
+|27 | TAN ZHI MING |  |  |  |  |
 
 
 ## Contribution 🛠️
