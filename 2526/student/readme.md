@@ -9,7 +9,7 @@
 
 | No. | Name                                     | ID | Github | Linked in | Portfolio |
 |----:|------------------------------------------|----|:------:|:---------:|:---------:|
-| 0 | LING YU QIAN | lingyuqian0301 | [:octocat:](https://github.com/lingyuqian0301) | <a href="https://www.linkedin.com/in/ling-yu-qian-90514025b"><img src="../../images/linkedin.png" width="24px" height="24px"></a> | <a href="https://web4me-ai-team.github.io/lingyuqian/"><img src="../../images/portfolio.png" width="24px" height="24px"></a> |
+| 0 | LING YU QIAN | |  |  |  |  |
 | 1 | AIN NURNABILA BINTI MOHD AZHAR |  |  |  |  |
 | 2 | BRENDAN CHIA YAN FEI |  |  |  |  |
 | 3 | CHAU YING JIA |  |  |  |  |
@@ -25,13 +25,13 @@
 |13 | JOANNE CHING YIN XUAN |  |  |  |  |
 |14 | LAU YAN KAI |  |  |  |  |
 |15 | LAU YEE WEN |  |  |  |  |
-|16 | LEE YIN SHEN | leeyinshen0818 | [:octocat:](https://github.com/leeyinshen0818) | <a href="https://www.linkedin.com/in/lee-yin-shen-86ba87297/"><img src="../../images/linkedin.png" width="24px" height="24px"></a> | <a href="https://github.com/Lee%20Yin%20Shen"><img src="../../images/portfolio.png" width="24px" height="24px"></a> |
+|16 | LEE YIN SHEN |  |  |  |  |
 |17 | LIM YU HAN |  |  |  |  |
 |18 | LUBNA AL HAANI BINTI RADZUAN |  |  |  |  |
 |19 | NEO LI XIN |  |  |  |  |
 |20 | NUR FIRZANA BINTI BADRUS HISHAM |  |  |  |  |
 |21 | NURAISYAH BINTI MOHD ZIKRE |  |  |  |  |
-|22 | NURUL IKA SYAFINY BINTI AZHAR |  |  |  |  |
+|22 | NURUL IKA SYAFINY BINTI AZHAR |ikaazhar  | [:octocat:](https://github.com/ikaazhar)  | <a href="https://www.linkedin.com/in/ikaazhar/" ><img src="../../images/linkedin.png" width="24px" height="24px" ></a> | <a href="https://ikaazhar.github.io/"><img src="../../images/portfolio.png" width="24px" height="24px"></a> |
 |23 | POH LOK YEE |  |  |  |  |
 |24 | SABRINA HENG WEI QI |  |  |  |  |
 |25 | SAFIYA NURSYAHADAH BINTI MASNOOR |  |  |  |  |
