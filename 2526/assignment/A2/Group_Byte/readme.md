@@ -35,9 +35,9 @@
 
 | File | Description |
 |---|---|
-| [`big_data.md`](.Group_Byte/big_data.md) | Main Markdown report covering all 5 tasks and comparative analysis |
-| [`big_data.ipynb`](.Group_Byte/big_data.ipynb) | Annotated Google Colab notebook with all working code and outputs |
-| [`readme.md`](.Group_Byte/readme.md) | This file, where group introduction and navigation guide |
+| [`big_data.md`](2526/assignment/A2/Group_Byte/big_data.md) | Main Markdown report covering all 5 tasks and comparative analysis |
+| [`big_data.ipynb`](2526/assignment/A2/Group_Byte/big_data.ipynb) | Annotated Google Colab notebook with all working code and outputs |
+| [`readme.md`](2526/assignment/A2/Group_Byte/readme.md) | This file, where group introduction and navigation guide |
 
 ---
 
