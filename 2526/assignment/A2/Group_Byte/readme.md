@@ -23,11 +23,11 @@
 
 ## Libraries Used
 
-| # | Library | Purpose |
-|---|---|---|
-| 1 | Pandas | Baseline comparison |
-| 2 | Dask | Parallel processing (multi-core) |
-| 3 | Polars | High-performance Rust engine |
+| # | Library | Version | Purpose |
+|---|---|---|---|
+| 1 | Pandas | 2.2.2 | Baseline comparison |
+| 2 | Dask | 2026.6.0 | Parallel processing (multi-core) |
+| 3 | Polars | 1.35.2 | High-performance Rust engine |
 
 ---
 
@@ -50,14 +50,6 @@
 | 3 | Data Type Optimization |
 | 4 | Sampling |
 | 5 | Parallel Processing with Scalable Libraries |
-
----
-
-## Libraries Used
-
- - Dask 
- - Polars 
- - Pandas 
 
 ---
 
