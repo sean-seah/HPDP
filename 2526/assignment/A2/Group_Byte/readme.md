@@ -35,9 +35,9 @@
 
 | File | Description |
 |---|---|
-| [`big_data.md`](./Group_Byte/big_data.md) | Main Markdown report covering all 5 tasks and comparative analysis |
+| [`big_data.md`](https://github.com/sean-seah/HPDP/blob/main/2526/assignment/A2/Group_Byte/big_data.md) | Main Markdown report covering all 5 tasks and comparative analysis |
 | [`big_data.ipynb`](https://github.com/sean-seah/HPDP/blob/main/2526/assignment/A2/Group_Byte/big_data.ipynb) | Annotated Google Colab notebook with all working code and outputs |
-| [`readme.md`](./Group_Byte/readme.md) | This file, where group introduction and navigation guide |
+| [`readme.md`](https://github.com/sean-seah/HPDP/blob/main/2526/assignment/A2/Group_Byte/readme.md) | This file, where group introduction and navigation guide |
 
 ---
 
