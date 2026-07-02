@@ -37,9 +37,30 @@
 |---|---|
 | [`big_data.md`](.Group_Byte/big_data.md) | Main Markdown report covering all 5 tasks and comparative analysis |
 | [`big_data.ipynb`](.Group_Byte/big_data.ipynb) | Annotated Google Colab notebook with all working code and outputs |
-| [`readme.md`](.Group_Byte/readme.md) | This file — group introduction and navigation guide |
+| [`readme.md`](.Group_Byte/readme.md) | This file, where group introduction and navigation guide |
 
 ---
+
+## Strategy Used
+
+| # | Strategy Name | 
+|---|---|
+| 1 | Less Load Data | 
+| 2 | Chunking | 
+| 3 | Data Type Optimization |
+| 4 | Sampling |
+| 5 | Parallel Processing with Scalable Libraries |
+
+---
+
+## Libraries Used
+
+ - Dask 
+ - Polars 
+ - Pandas 
+
+---
+
 
 ## How to Run the Notebook
 
