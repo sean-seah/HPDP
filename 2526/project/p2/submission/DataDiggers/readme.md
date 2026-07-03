@@ -44,10 +44,9 @@ HPDP/2526/project/p2/submission/DataDiggers/
 |
 ├── kafka_spark_pipeline/
 │   ├── docker-compose.yml
+│   ├── elastic_mappings.json
 │   ├── producer.py
-|   ├── spark_stream.py
-|   └── dashboard/
-│       └── elastic_mappings.json #not exist yet
+|   └── spark_stream.py
 |
 ├── kibana_visualizations.json
 |
