@@ -1,0 +1,25 @@
+{
+  "mappings": {
+    "properties": {
+      "app": {
+        "type": "keyword"
+      },
+      "review": {
+        "type": "text"
+      },
+      "sentiment": {
+        "type": "keyword"
+      },
+      "rating": {
+        "type": "float"
+      },
+      "review_date": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss"
+      },
+      "stream_timestamp": {
+        "type": "double"
+      }
+    }
+  }
+}
