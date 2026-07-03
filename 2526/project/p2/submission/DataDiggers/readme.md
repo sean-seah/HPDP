@@ -6,7 +6,7 @@
 |------|------|------|
 | NUR FIRZANA BINTI BADRUS HISHAM | A23CS0156 | Data Engineer |
 | NURAISYAH BINTI MOHD ZIKRE | A23CS0160 | Model Engineer |
-| HAANI |  |  Pipeline Engineer |
+| LUBNA AL HAANI BINTI RADZUAN | A23CS0107 |  Pipeline Engineer |
 | IKA |  | Visualization & Performance Engineer |
 
 Video Presentation: [youtube link]( )
@@ -43,9 +43,11 @@ HPDP/2526/project/p2/submission/DataDiggers/
 │       └── lstm_model.h5           # in case for comparison
 |
 ├── kafka_spark_pipeline/
-│   ├── spark_streaming.py
+│   ├── docker-compose.yml
+│   ├── producer.py
+|   ├── spark_stream.py
 |   └── dashboard/
-│       └── elastic_mappings.json
+│       └── elastic_mappings.json #not exist yet
 |
 ├── kibana_visualizations.json
 |
