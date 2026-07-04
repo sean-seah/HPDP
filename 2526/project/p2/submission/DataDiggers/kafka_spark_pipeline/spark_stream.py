@@ -20,9 +20,9 @@ INDEX = "google_play_sentiment"
 # =========================
 # 2. Load ML Model (B)
 # =========================
-model = joblib.load("models/naive_bayes_model.pkl")
-tfidf = joblib.load("models/tfidf_vectorizer.pkl")
-label_encoder = joblib.load("models/label_encoder.pkl")
+model = joblib.load("model_training/models/naive_bayes_model.pkl")
+tfidf = joblib.load("model_training/models/tfidf_vectorizer.pkl")
+label_encoder = joblib.load("model_training/models/label_encoder.pkl")
 
 
 # =========================
@@ -36,6 +36,8 @@ spark = SparkSession.builder \
     ) \
     .config("spark.sql.shuffle.partitions", "2") \
     .config("spark.driver.memory", "2g") \
+    .config("spark.driver.host", "127.0.0.1") \
+    .config("spark.driver.bindAddress", "127.0.0.1") \
     .getOrCreate()
 
 spark.sparkContext.setLogLevel("WARN")
