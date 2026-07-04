@@ -1,1 +1,37 @@
+# DataDiggers — SECP3133 Project 2
+# Full pipeline dependencies: scraping/cleaning (A), modeling (B),
+# Kafka/Spark pipeline (C), visualization/performance (D)
 
+# --- Data handling ---
+pandas>=2.2.0
+numpy>=1.26.0
+
+# --- Data collection / scraping (A) ---
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+
+# --- NLP preprocessing (A) ---
+nltk>=3.8.1
+
+# --- Machine learning models (B) ---
+scikit-learn>=1.4.0
+joblib>=1.3.2
+
+# --- Deep learning model (B) — LSTM ---
+# Requires Python 3.9-3.13. If your interpreter is Python 3.14, install this
+# in a separate 3.11/3.12 venv (same one used for pyspark).
+tensorflow>=2.16.0,<2.19.0
+
+# --- Kafka + Spark pipeline (C) ---
+# pyspark version MUST match the spark-sql-kafka connector version
+# referenced in spark_stream.py's spark.jars.packages config (3.5.1).
+pyspark==3.5.1
+kafka-python>=2.0.2
+
+# --- Elasticsearch client (C, D) ---
+elasticsearch>=8.13.0,<9.0.0   # match your Elasticsearch server's major version
+
+# --- Visualization / performance (D) ---
+wordcloud>=1.9.3
+matplotlib>=3.8.0
+psutil>=5.9.8

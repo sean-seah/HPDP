@@ -1,0 +1,9 @@
+# Additions for kafka_spark_pipeline/dashboard/ (Task D — Visualization & Performance Engineer)
+# Merge these into the project's root requirements.txt — don't duplicate packages
+# A/B/C already listed (e.g. pandas, joblib, elasticsearch, kafka-python, pyspark).
+
+wordcloud>=1.9.3
+matplotlib>=3.8.0
+psutil>=5.9.8
+scikit-learn>=1.4.0        # only needed here if not already listed for accuracy/precision/recall calc
+elasticsearch>=8.13.0      # match the major version C used in spark_stream.py
