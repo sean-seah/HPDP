@@ -7,7 +7,7 @@
 | NUR FIRZANA BINTI BADRUS HISHAM | A23CS0156 | Data Engineer |
 | NURAISYAH BINTI MOHD ZIKRE | A23CS0160 | Model Engineer |
 | LUBNA AL HAANI BINTI RADZUAN | A23CS0107 |  Pipeline Engineer |
-| IKA |  | Visualization & Performance Engineer |
+| NURUL IKA SYAFINY BINTI AZHAR | A23CS0164 | Visualization & Performance Engineer |
 
 Video Presentation: [youtube link]( )
 
