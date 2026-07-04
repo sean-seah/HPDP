@@ -4,7 +4,7 @@ import pandas as pd
 from kafka import KafkaProducer
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).parent
+PROJECT_ROOT = Path(__file__).parent.parent
 DATA_PATH = PROJECT_ROOT / "data" / "raw_data" / "raw_reviews.csv"
 
 # ==========================
