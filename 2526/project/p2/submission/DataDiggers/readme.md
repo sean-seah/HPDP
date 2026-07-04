@@ -23,9 +23,9 @@ HPDP/2526/project/p2/submission/DataDiggers/
 │   |   ├── lemmatized.csv
 │   |   ├── raw_reviews.csv
 │   |   └── tokenized.csv
-│   └── cleaned_data.csv        # hands off to model engineer to start their job
+│   └── cleaned_data.csv        
 |
-├── data_cleaning/              # DATA ENGINEER FOLDER
+├── data_cleaning/              
 │   ├── clean_text.ipynb        # step 3
 │   ├── export_dataset.ipynb    # step 6
 │   ├── label_data.ipynb        # step 2
@@ -35,24 +35,37 @@ HPDP/2526/project/p2/submission/DataDiggers/
 |
 ├── model_training/
 │   └── model_training.ipynb
-│   └── model/                      # hands off to pipeline engineer to start their job
+│   └── model/                      
 │       └── naive_bayes_model.pkl
 │       └── tfidf_vectorizer.pkl
 │       └── label_encoder.pkl   
-│       └── lstm_tokenizer.pkl      # in case for comparison
-│       └── lstm_model.h5           # in case for comparison
+│       └── lstm_tokenizer.pkl      
+│       └── lstm_model.h5           
 |
 ├── kafka_spark_pipeline/
 │   ├── docker-compose.yml
 │   ├── elastic_mappings.json
 │   ├── producer.py
 |   └── spark_stream.py
+│   └── dashboard/
+│       ├── wordcloud_generator.py
+│       ├── performance_test_batch.py
+│       ├── streaming_monitor.py
+│       ├── compare_results.py
+│       └── results/                    
+│           ├── batch_results.json
+│           ├── streaming_results.json
+│           ├── comparison_chart.png
+│           ├── comparison_table.md
+│           ├── wordcloud_positive.png
+│           └── wordcloud_negative.png
 |
-├── kibana_visualizations.json
+├── kibana_visualizations.ndjson
 |
 ├── reports/
 │   └── final_report.pdf
 |
 ├── presentation_slides.pdf
 └── requirements.txt
+└── requirements_dashboard.txt
 ```
