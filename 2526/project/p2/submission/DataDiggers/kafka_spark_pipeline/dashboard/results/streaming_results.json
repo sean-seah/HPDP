@@ -1,0 +1,13 @@
+{
+  "mode": "streaming",
+  "n_records": 201,
+  "total_processing_time_sec": 860.93,
+  "throughput_records_per_sec": 0.23,
+  "accuracy": 0.592,
+  "precision_weighted": 0.6129,
+  "recall_weighted": 0.592,
+  "f1_weighted": 0.5963,
+  "kafka_cpu_percent_avg": 6.64,
+  "spark_process_memory_mb_avg": 1.05,
+  "note": "Accuracy assumes ES doc order matches --truth row order (row-index join). For an exact join, add an incrementing 'review_id' field in producer.py and spark_stream.py."
+}

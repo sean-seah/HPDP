@@ -1,0 +1,13 @@
+{
+  "mode": "batch",
+  "n_records": 200,
+  "total_processing_time_sec": 0.0116,
+  "throughput_records_per_sec": 17310.62,
+  "accuracy": 0.84,
+  "precision_weighted": 0.88,
+  "recall_weighted": 0.84,
+  "f1_weighted": 0.8343,
+  "cpu_percent_process": 0.0,
+  "memory_mb_process": 0.32,
+  "memory_mb_total": 148.66
+}
