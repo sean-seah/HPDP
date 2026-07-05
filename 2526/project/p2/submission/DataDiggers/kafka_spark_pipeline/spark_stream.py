@@ -47,6 +47,7 @@ spark.sparkContext.setLogLevel("WARN")
 # 4. Kafka Schema
 # =========================
 schema = StructType() \
+    .add("review_id", StringType()) \
     .add("app", StringType()) \
     .add("review", StringType()) \
     .add("rating", DoubleType()) \
@@ -123,7 +124,7 @@ def process_batch(batch_df, batch_id):
         }
 
         try:
-            es.index(index=INDEX, document=doc)
+            es.index(index=INDEX, id=str(row["review_id"]), document=doc)
         except Exception as e:
             print("Elasticsearch error:", e)
 
