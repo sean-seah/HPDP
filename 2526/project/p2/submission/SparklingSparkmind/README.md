@@ -28,11 +28,10 @@ Real-time sentiment analysis pipeline on Malaysian-relevant text data, using:
 - **Approx. volume collected:** 
 
 ## Models Compared
-
 | Model | Category | Library |
 |---|---|---|
-| [e.g. Naive Bayes] | Machine Learning | scikit-learn |
-| [e.g. LSTM] | Deep Learning | TensorFlow / PyTorch |
+| Naive Bayes (TF-IDF) | Machine Learning | scikit-learn |
+| LSTM | Deep Learning | TensorFlow / Keras |
 
 Evaluated using accuracy, precision, recall, F1 score, and confusion matrix (70/20/10 train/test/validation split).
 
