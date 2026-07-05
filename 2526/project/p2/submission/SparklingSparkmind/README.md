@@ -87,22 +87,22 @@ Mapped to the 5 required submission items (Section 7 of the brief):
 | # | Deliverable | Status | Location |
 |---|---|---|---|
 | 1 | Final Report (PDF) | In progress | `reports/final_report.pdf` |
-| 2 | Source Code | Done | `kafka_spark_pipeline/`, `notebooks/`, `model_training.ipynb` |
-| 3 | Dashboard + Dataset | Done | `kafka_spark_pipeline/dashboard/`, `data/cleaned_data.csv` |
+| 2 | Source Code | Done ✅ | `kafka_spark_pipeline/`, `notebooks/`, `model_training.ipynb` |
+| 3 | Dashboard + Dataset | Done ✅ | `kafka_spark_pipeline/dashboard/`, `data/cleaned_data.csv` |
 | 4 | Model Comparison | In progress | `model_training.ipynb`, `reports/final_report.pdf` (Section 3) |
-| 5 | Presentation Slides | Done | `presentation_slides.pptx` |
+| 5 | Presentation Slides | Done ✅ | `presentation_slides.pptx` |
 
 ## Progress Checklist
 
-- [ ] Data source confirmed with lecturer (Week 1)
-- [ ] Data collection complete
-- [ ] Preprocessing pipeline complete
-- [ ] At least 2 sentiment models trained and evaluated
-- [ ] Kafka broker + topic configured
-- [ ] Spark Structured Streaming job integrated with trained model
-- [ ] Storage layer (Elasticsearch/Druid) connected
-- [ ] Batch vs. streaming comparison complete
-- [ ] Dashboards built (pie chart, sentiment-over-time, word clouds)
+- [✅] Data source confirmed with lecturer (Week 1)
+- [✅] Data collection complete
+- [✅] Preprocessing pipeline complete
+- [✅] At least 2 sentiment models trained and evaluated
+- [✅] Kafka broker + topic configured
+- [✅] Spark Structured Streaming job integrated with trained model
+- [✅] Storage layer (Elasticsearch/Druid) connected
+- [✅] Batch vs. streaming comparison complete
+- [✅] Dashboards built (pie chart, sentiment-over-time, word clouds)
 - [ ] Final report compiled
 - [ ] Presentation slides finalized
 
