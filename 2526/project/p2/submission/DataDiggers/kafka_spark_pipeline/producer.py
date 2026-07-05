@@ -31,6 +31,7 @@ print("Starting live stream...\n")
 for index, row in df.iterrows():
 
     message = {
+        "review_id": int(index),
         "app": row["app"],
         "review": str(row["text"]),
         "rating": int(row["rating"]),
