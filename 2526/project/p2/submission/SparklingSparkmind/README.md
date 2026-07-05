@@ -86,11 +86,11 @@ Mapped to the 5 required submission items (Section 7 of the brief):
 
 | # | Deliverable | Status | Location |
 |---|---|---|---|
-| 1 | Final Report (PDF) | [ ] In progress | `reports/final_report.pdf` |
-| 2 | Source Code | [ ] In progress | `kafka_spark_pipeline/`, `notebooks/`, `model_training.ipynb` |
-| 3 | Dashboard + Dataset | [ ] In progress | `kafka_spark_pipeline/dashboard/`, `data/cleaned_data.csv` |
-| 4 | Model Comparison | [ ] In progress | `model_training.ipynb`, `reports/final_report.pdf` (Section 3) |
-| 5 | Presentation Slides | [ ] Not started | `presentation_slides.pptx` |
+| 1 | Final Report (PDF) | In progress | `reports/final_report.pdf` |
+| 2 | Source Code | In progress | `kafka_spark_pipeline/`, `notebooks/`, `model_training.ipynb` |
+| 3 | Dashboard + Dataset | In progress | `kafka_spark_pipeline/dashboard/`, `data/cleaned_data.csv` |
+| 4 | Model Comparison | In progress | `model_training.ipynb`, `reports/final_report.pdf` (Section 3) |
+| 5 | Presentation Slides | In progress | `presentation_slides.pptx` |
 
 ## Progress Checklist
 
