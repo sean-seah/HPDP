@@ -73,7 +73,7 @@ HPDP/2526/project/Sparkling Sparkmind/
 │   ├── spark_streaming.py
 │   ├── dashboard/
 │   └── elastic_mappings.json
-├── kibana_visualizations.json
+├── kibana_visualizations.ndjson
 ├── reports/
 │   └── final_report.pdf
 ├── presentation_slides.pptx
@@ -87,10 +87,10 @@ Mapped to the 5 required submission items (Section 7 of the brief):
 | # | Deliverable | Status | Location |
 |---|---|---|---|
 | 1 | Final Report (PDF) | In progress | `reports/final_report.pdf` |
-| 2 | Source Code | In progress | `kafka_spark_pipeline/`, `notebooks/`, `model_training.ipynb` |
-| 3 | Dashboard + Dataset | In progress | `kafka_spark_pipeline/dashboard/`, `data/cleaned_data.csv` |
+| 2 | Source Code | Done | `kafka_spark_pipeline/`, `notebooks/`, `model_training.ipynb` |
+| 3 | Dashboard + Dataset | Done | `kafka_spark_pipeline/dashboard/`, `data/cleaned_data.csv` |
 | 4 | Model Comparison | In progress | `model_training.ipynb`, `reports/final_report.pdf` (Section 3) |
-| 5 | Presentation Slides | In progress | `presentation_slides.pptx` |
+| 5 | Presentation Slides | Done | `presentation_slides.pptx` |
 
 ## Progress Checklist
 
