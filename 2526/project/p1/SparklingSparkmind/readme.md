@@ -1,6 +1,6 @@
 # Optimizing High Performance Data Processing for Large Scale Web Crawlers
 
-**Course:** SECP3133-02 — High Performance Data Processing
+**Course:** SECP3133-02, High Performance Data Processing
 **Project:** Project 1
 **Group:** Sparkling Sparkmind
 **Prepared for:** Dr. Seah Choon Sen
@@ -14,11 +14,9 @@
 | Farra Nurzahin Binti Zaharil Anuar | A23CS0079 |
 | Dayang Farah Farzana Binti Abang Idham | A23CS0071 |
 
----
-
 ## 1. Project Overview
 
-This project builds a complete data pipeline that crawls, cleans, and processes job vacancy listings from **MyFutureJobs** (myfuturejobs.gov.my), a Malaysian government job portal. The goal isn't just to collect a large dataset — it's to show, with real numbers, how different processing strategies hold up once the data gets big.
+This project builds a complete data pipeline that crawls, cleans, and processes job vacancy listings from **MyFutureJobs** (myfuturejobs.gov.my), a Malaysian government job portal. The goal isn't just to collect a large dataset. It's to show, with real numbers, how different processing strategies hold up once the data gets big.
 
 We collected over 120,000 raw job listings, cleaned them down to **112,499 valid records**, and then ran the same analysis pipeline three different ways: a plain single-threaded Pandas baseline, a multiprocessing version using Joblib, and a Polars-based version using lazy evaluation. Each version was benchmarked on execution time, memory usage, CPU utilization, and throughput so we could compare them fairly.
 
@@ -27,12 +25,12 @@ We collected over 120,000 raw job listings, cleaned them down to **112,499 valid
 - Crawl at least 100,000 structured job records from a single Malaysian website, respecting the site's server load.
 - Clean and structure the raw data into a consistent format ready for analysis.
 - Apply at least two genuinely different HPC optimization techniques (we used two: multiprocessing and Polars) and compare them against a baseline.
-- Measure and interpret performance using objective, repeatable metrics — not just a single run.
+- Measure and interpret performance using objective, repeatable metrics, not just a single run.
 - Document everything clearly enough that another student could follow the same pipeline end to end.
 
 ## 3. Target Website and Data Fields
 
-**Website:** MyFutureJobs (myfuturejobs.gov.my) — a government job portal listing vacancies across sectors such as administrative support, technology, manufacturing, healthcare, and education.
+**Website:** MyFutureJobs (myfuturejobs.gov.my), a government job portal listing vacancies across sectors such as administrative support, technology, manufacturing, healthcare, and education.
 
 **Fields extracted per listing:**
 
@@ -79,11 +77,11 @@ p1/sparkling-sparkmind/
 This project was developed and run entirely on **Google Colab**, with **Google Drive** used as shared storage between group members.
 
 1. Open each notebook in Google Colab.
-2. Mount Google Drive when prompted — all notebooks expect data to live under `/content/drive/MyDrive/HPDP_Project1/data/`.
+2. Mount Google Drive when prompted. All notebooks expect data to live under `/content/drive/MyDrive/HPDP_Project1/data/`.
 3. Run the notebooks in order:
-   1. `main_crawler.ipynb` — scrapes job listings and saves raw JSON progressively.
-   2. `clean_data.ipynb` — loads the raw JSON, cleans it, and exports `cleaned_data.csv`.
-   3. `optimize_pipeline.ipynb` — loads the cleaned CSV and runs all three processing approaches, printing and charting the performance comparison.
+   1. `main_crawler.ipynb`: scrapes job listings and saves raw JSON progressively.
+   2. `clean_data.ipynb`: loads the raw JSON, cleans it, and exports `cleaned_data.csv`.
+   3. `optimize_pipeline.ipynb`: loads the cleaned CSV and runs all three processing approaches, printing and charting the performance comparison.
 
 Install dependencies locally with:
 
@@ -118,15 +116,15 @@ Cleaning was done in Pandas and included:
 | Raw records collected | 120,000+ |
 | Cleaned records (final dataset) | 112,499 |
 
-As shown in Table 1, only a small share of records were dropped, mostly duplicates and listings missing salary data — a sign the crawler was extracting fields accurately from the start.
+As shown in Table 1, only a small share of records were dropped, mostly duplicates and listings missing salary data. This is a sign the crawler was extracting fields accurately from the start.
 
 ## 8. Optimization Techniques
 
 Three approaches were implemented and benchmarked on the same analysis workflow (filter valid salaries → engineer `salary_gap`/`gap_percentage` → aggregate by location and contract type):
 
-1. **Pandas (Baseline)** — standard single-threaded processing, used as the reference point.
-2. **Multiprocessing (Joblib, loky backend)** — splits the dataset into chunks and processes them across multiple CPU cores in parallel.
-3. **Polars** — a Rust-based dataframe library using lazy evaluation, where the whole query plan is optimized before running once.
+1. **Pandas (Baseline)**: standard single-threaded processing, used as the reference point.
+2. **Multiprocessing (Joblib, loky backend)**: splits the dataset into chunks and processes them across multiple CPU cores in parallel.
+3. **Polars**: a Rust-based dataframe library using lazy evaluation, where the whole query plan is optimized before running once.
 
 ## 9. Performance Evaluation
 
@@ -141,7 +139,7 @@ Each method was run 5 times and averaged, tracking execution time, peak memory, 
 | Avg CPU (%) | 81.4 | 59.0 | 89.6 |
 | Avg Throughput (rows/s) | 87,734 | 66,313 | 345,663 |
 
-As Table 2 shows, **Polars was the clear winner** — roughly 4× faster than the Pandas baseline and 5× faster than multiprocessing, while also using far less memory. Multiprocessing, somewhat surprisingly, ended up *slower* than the plain baseline. This came down to two things: only 2 CPU cores were available in our Colab environment, and the per-row computation (filtering and simple arithmetic) was too lightweight to outweigh the cost of splitting the data across processes and merging it back. Full details and charts are in the Final Report.
+As Table 2 shows, **Polars was the clear winner**, roughly 4x faster than the Pandas baseline and 5x faster than multiprocessing, while also using far less memory. Multiprocessing, somewhat surprisingly, ended up *slower* than the plain baseline. This came down to two things: only 2 CPU cores were available in our Colab environment, and the per-row computation (filtering and simple arithmetic) was too lightweight to outweigh the cost of splitting the data across processes and merging it back. Full details and charts are in the Final Report.
 
 ## 10. Challenges Faced
 
