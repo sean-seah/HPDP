@@ -212,6 +212,7 @@ GroupABC_NST/
 |   
 |-- Group_ABC_Report_P1.pdf
 |
+|-- Project 1 Presentation Slide
 `-- README.md
 ```
 
