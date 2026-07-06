@@ -196,39 +196,6 @@ GroupABC_NST/
 `-- README.md
 ```
 
-## Important Files for GitHub Submission
-
-Upload these files and folders:
-
-- `README.md`
-- `.gitignore`
-- `requirements.txt`
-- `src/`
-- `data/raw/nst_raw.csv`
-- `data/raw/performance_crawl.csv`
-- `data/processed/nst_cleaned.csv`
-- `data/processed/performance_processing.csv`
-- `data/processed/polars_outputs/`
-- `data/logs/nst_crawling_log.csv`
-- `charts/`
-- `docs/`
-
-Do not upload local environment or cache folders:
-
-```text
-.venv/
-.venv-1/
-.matplotlib-cache/
-__pycache__/
-.agents/
-.codex/
-data/raw/nst_articles.jsonl
-data/raw/nst_visited_urls.txt
-data/benchmark/
-```
-
-These files are local machine artifacts and can be recreated. They are excluded by `.gitignore`.
-
 ## Setup
 
 Install the required Python packages:
