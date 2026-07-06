@@ -1,0 +1,4 @@
+dataset,mode,records,seconds,records_per_second,cpu_percent,memory_mb
+nst,basic,102265,7.51,13617.895,92.0,466.4
+nst,multiprocessing,102265,6.231,16413.567,75.0,528.96
+nst,polars,102265,0.558,183392.279,29.6,332.92

@@ -1,0 +1,7 @@
+beautifulsoup4>=4.12
+matplotlib>=3.8
+pandas>=2.0
+psutil>=5.9
+requests>=2.31
+polars>=0.20
+lxml

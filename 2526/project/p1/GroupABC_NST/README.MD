@@ -5,11 +5,11 @@ Welcome to our group's repository for the High Performance Data Processing proje
 ## Group Information
 
 * **Members:**
-  * JOANNE CHING YIN XUAN - A23CS0227 
-  * LIM YU HAN - A23CS0241 
-  * CHUA JIA LIN - A23CS0069
-  * EVELYN GOH YUAN QI - A23CS0222 
-  
+  * Member 1 - Matric No.
+  * Member 2 - Matric No.
+  * Member 3 - Matric No.
+  * Member 4 - Matric No.
+
 ## Project Overview
 
 This project focuses on designing, developing, and optimizing a high-performance web crawler for large-scale data extraction from the New Straits Times website, a Malaysian online news platform. The selected domain for this project is news article metadata from `https://www.nst.com.my/`.
