@@ -155,14 +155,25 @@ The generated chart files are stored in the `charts/` folder.
 ## Project Structure
 
 ```text
-project1_code/
+GroupABC_NST/
+|
+|-- README.md
+|-- requirements.txt
+|-- .gitignore
+|
+|-- src/
+|   |-- benchmark_crawler.py
+|   |-- clean_nst.py
+|   |-- count_nst.py
+|   |-- crawl_nst.py
+|   |-- export_nst_csv.py
+|   |-- make_nst_charts.py
+|   `-- polars_nst.py
 |
 |-- data/
 |   |-- raw/
-|   |   |-- nst_articles.jsonl
 |   |   |-- nst_raw.csv
-|   |   |-- performance_crawl.csv
-|   |   `-- nst_visited_urls.txt
+|   |   `-- performance_crawl.csv
 |   |
 |   |-- processed/
 |   |   |-- nst_cleaned.csv
@@ -172,11 +183,8 @@ project1_code/
 |   |       |-- monthly_summary.csv
 |   |       `-- top_authors.csv
 |   |
-|   |-- logs/
-|   |   `-- nst_crawling_log.csv
-|   |
-|   `-- benchmark/
-|       `-- benchmark_articles.jsonl
+|   `-- logs/
+|       `-- nst_crawling_log.csv
 |
 |-- charts/
 |   |-- crawler_cpu_usage.png
@@ -188,23 +196,9 @@ project1_code/
 |   |-- processing_memory_usage.png
 |   `-- processing_throughput.png
 |
-|-- src/
-|   |-- benchmark_crawler.py
-|   |-- clean_nst.py
-|   |-- count_nst.py
-|   |-- crawl_nst.py
-|   |-- export_nst_csv.py
-|   |-- make_nst_charts.py
-|   `-- polars_nst.py
-|
-|-- docs/
-|   |-- Group_ABC_Report_P1.pdf
-|   |-- final_report.md
-|   `-- nst_project_plan_updated.md
-|
-|-- README.md
-|-- requirements.txt
-`-- .gitignore
+`-- docs/
+    |-- Group_ABC_Report_P1.pdf
+    `-- nst_project_plan_updated.md
 ```
 
 ## Important Files for GitHub Submission
