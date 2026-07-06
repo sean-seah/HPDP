@@ -1,0 +1,3 @@
+dataset,mode,records,seconds,records_per_second,cpu_percent,memory_mb
+nst,basic,500,508.876,0.983,13.86,66.87
+nst,threaded,500,165.303,3.025,30.01,69.95
