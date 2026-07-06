@@ -191,13 +191,9 @@ GroupABC_NST/
 |   |-- make_nst_charts.py
 |   `-- polars_nst.py
 |
-|-- docs/
-|   |-- Group_ABC_Report_P1.pdf
-|   `-- nst_project_plan_updated.md
+|-- Group_ABC_Report_P1.pdf
 |
-|-- README.md
-|-- requirements.txt
-`-- .gitignore
+`-- README.md
 ```
 
 ## Important Files for GitHub Submission
