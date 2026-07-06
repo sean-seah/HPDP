@@ -156,41 +156,61 @@ The generated chart files are stored in the `charts/` folder.
 ```text
 GroupABC_NST/
 |
-|-- data/
-|   |-- raw/
-|   |   |-- nst_raw.csv
-|   |   `-- performance_crawl.csv
+|-- p1/
 |   |
-|   |-- processed/
-|   |   |-- nst_cleaned.csv
-|   |   |-- performance_processing.csv
-|   |   `-- polars_outputs/
-|   |       |-- category_summary.csv
-|   |       |-- monthly_summary.csv
-|   |       `-- top_authors.csv
+|   |-- data/
+|   |   |-- raw/
+|   |   |   `-- nst_raw.csv
+|   |   |
+|   |   |-- processed/
+|   |   |   `-- nst_cleaned.csv
+|   |   |
+|   |   `-- logs/
+|   |       `-- nst_crawling_log.csv
 |   |
-|   `-- logs/
-|       `-- nst_crawling_log.csv
+|   |-- src/
+|   |   |-- clean_nst.py
+|   |   |-- count_nst.py
+|   |   |-- crawl_nst.py
+|   |   `-- export_nst_csv.py
+|   |
+|   |-- Group_ABC_Report_P1.pdf
+|   |
+|   `-- README.md
 |
-|-- charts/
-|   |-- crawler_cpu_usage.png
-|   |-- crawler_execution_time.png
-|   |-- crawler_memory_usage.png
-|   |-- crawler_throughput.png
-|   |-- processing_cpu_usage.png
-|   |-- processing_execution_time.png
-|   |-- processing_memory_usage.png
-|   `-- processing_throughput.png
+|-- p2/
+|   |
+|   |-- data/
+|   |   |-- raw/
+|   |   |   `-- performance_crawl.csv
+|   |   |
+|   |   |-- processed/
+|   |   |   |-- performance_processing.csv
+|   |   |   |
+|   |   |   `-- polars_outputs/
+|   |   |       |-- category_summary.csv
+|   |   |       |-- monthly_summary.csv
+|   |   |       `-- top_authors.csv
+|   |
+|   |-- charts/
+|   |   |-- crawler_cpu_usage.png
+|   |   |-- crawler_execution_time.png
+|   |   |-- crawler_memory_usage.png
+|   |   |-- crawler_throughput.png
+|   |   |-- processing_cpu_usage.png
+|   |   |-- processing_execution_time.png
+|   |   |-- processing_memory_usage.png
+|   |   `-- processing_throughput.png
+|   |
+|   |-- src/
+|   |   |-- benchmark_crawler.py
+|   |   |-- clean_nst.py
+|   |   |-- make_nst_charts.py
+|   |   `-- polars_nst.py
+|   |
+|   
 |
-|-- src/
-|   |-- benchmark_crawler.py
-|   |-- clean_nst.py
-|   |-- count_nst.py
-|   |-- crawl_nst.py
-|   |-- export_nst_csv.py
-|   |-- make_nst_charts.py
-|   `-- polars_nst.py
-|
+`-- README.md
 |-- Group_ABC_Report_P1.pdf
 |
 `-- README.md
