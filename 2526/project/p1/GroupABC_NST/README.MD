@@ -5,10 +5,10 @@ Welcome to our group's repository for the High Performance Data Processing proje
 ## Group Information
 
 * **Members:**
-  * Member 1 - Matric No.
-  * Member 2 - Matric No.
-  * Member 3 - Matric No.
-  * Member 4 - Matric No.
+  * JOANNE CHING YIN XUAN - A23CS0227
+  * LIM YU HAN - A23CS0241
+  * CHUA JIA LIN - A23CS0069
+  * EVELYN GOH YUAN QI - A23CS0222
 
 ## Project Overview
 
@@ -20,7 +20,7 @@ The main objective is to collect at least 100,000 structured records, clean and 
 
 - Build a web crawler to extract structured news article metadata from NST.
 - Collect more than 100,000 structured article records.
-- Store the extracted data in JSONL and CSV formats.
+- Store the extracted and cleaned data in CSV format.
 - Clean and process the raw dataset.
 - Apply high-performance optimization techniques.
 - Compare baseline and optimized crawler and processing performance.
@@ -59,7 +59,6 @@ The cleaned dataset contains 13 columns:
 
 | Cleaning Step | Result |
 | --- | ---: |
-| Raw JSONL records collected | 102,265 |
 | Raw CSV records generated | 102,265 |
 | Duplicate URL records removed | 0 |
 | Final cleaned rows | 102,265 |
@@ -100,7 +99,7 @@ The analytical processing stage uses Polars lazy CSV scanning and expression-bas
 
 ### 4. Progressive Data Writing
 
-The crawler stores records progressively in JSONL and CSV formats. This reduces the risk of losing collected data during long crawling runs and supports easier validation.
+The crawler stores records progressively and exports the final raw and cleaned datasets in CSV format. This reduces the risk of losing collected data during long crawling runs and supports easier validation.
 
 ## Performance Evaluation
 
@@ -157,19 +156,6 @@ The generated chart files are stored in the `charts/` folder.
 ```text
 GroupABC_NST/
 |
-|-- README.md
-|-- requirements.txt
-|-- .gitignore
-|
-|-- src/
-|   |-- benchmark_crawler.py
-|   |-- clean_nst.py
-|   |-- count_nst.py
-|   |-- crawl_nst.py
-|   |-- export_nst_csv.py
-|   |-- make_nst_charts.py
-|   `-- polars_nst.py
-|
 |-- data/
 |   |-- raw/
 |   |   |-- nst_raw.csv
@@ -196,9 +182,22 @@ GroupABC_NST/
 |   |-- processing_memory_usage.png
 |   `-- processing_throughput.png
 |
-`-- docs/
-    |-- Group_ABC_Report_P1.pdf
-    `-- nst_project_plan_updated.md
+|-- src/
+|   |-- benchmark_crawler.py
+|   |-- clean_nst.py
+|   |-- count_nst.py
+|   |-- crawl_nst.py
+|   |-- export_nst_csv.py
+|   |-- make_nst_charts.py
+|   `-- polars_nst.py
+|
+|-- docs/
+|   |-- Group_ABC_Report_P1.pdf
+|   `-- nst_project_plan_updated.md
+|
+|-- README.md
+|-- requirements.txt
+`-- .gitignore
 ```
 
 ## Important Files for GitHub Submission
@@ -209,7 +208,6 @@ Upload these files and folders:
 - `.gitignore`
 - `requirements.txt`
 - `src/`
-- `data/raw/nst_articles.jsonl`
 - `data/raw/nst_raw.csv`
 - `data/raw/performance_crawl.csv`
 - `data/processed/nst_cleaned.csv`
@@ -227,6 +225,10 @@ Do not upload local environment or cache folders:
 .matplotlib-cache/
 __pycache__/
 .agents/
+.codex/
+data/raw/nst_articles.jsonl
+data/raw/nst_visited_urls.txt
+data/benchmark/
 ```
 
 These files are local machine artifacts and can be recreated. They are excluded by `.gitignore`.
@@ -290,7 +292,6 @@ python src\count_nst.py
 The final project report is available in the `docs/` folder:
 
 - `docs/Group_ABC_Report_P1.pdf`
-- `docs/final_report.md`
 
 ## Ethical Considerations
 
