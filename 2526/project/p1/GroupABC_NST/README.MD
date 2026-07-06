@@ -204,9 +204,11 @@ GroupABC_NST/
 |   |
 |   |-- src/
 |   |   |-- benchmark_crawler.py
-|       |-- clean_nst.py
-|       |-- make_nst_charts.py
-|       `-- polars_nst.py
+|   |   |-- clean_nst.py
+|   |   |-- make_nst_charts.py
+|   |   `-- polars_nst.py
+|   |
+|   `-- README.md
 |   
 |-- Group_ABC_Report_P1.pdf
 |
