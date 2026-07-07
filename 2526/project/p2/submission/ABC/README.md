@@ -9,7 +9,7 @@ A real-time streaming sentiment analysis system that continuously processes Touc
 | Member | Responsibility |
 |---------|----------------|
 | Joanne Ching Yin Xuan | Data Collection & Preprocessing |
-| Lim Yu Han | Apache Spark Streaming, Elasticsearch & Kibana Integration |
+| Lim Yu Han | Apache Kafka, Apache Spark Streaming, Elasticsearch & Kibana Integration |
 | Chua Jia Lin | Machine Learning Model Development |
 | Evelyn Goh Yuan Qi | Model Evaluation & Performance Analysis |
 
