@@ -5,7 +5,7 @@ from kafka import KafkaProducer
 
 DATA_PATH = "data/grab_reviews_preprocessed.csv"
 TOPIC_NAME = "grab-reviews"
-LIMIT_MESSAGES = 50   # first test only send 50 reviews
+LIMIT_MESSAGES = None  
 
 producer = KafkaProducer(
     bootstrap_servers="localhost:9092",
