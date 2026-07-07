@@ -12,7 +12,7 @@
 | SABRINA HENG WEI QI | A23CS0265 | Data Collection & NLP Preprocessing |
 | WOO CHENG SHUAN | A23CS0283 | Sentiment Model Development (Naive Bayes & LSTM) |
 | LING YU QIAN | A23CS0301 | Model Evaluation & Performance Comparison |
-| GUI KAH SIN | A23CS0080 | Kafka–Spark Streaming Pipeline, Elasticsearch, Kibana Dashboard & Word Cloud |
+| GUI KAH SIN | A23CS0080 | Elasticsearch Integration, Kibana Dashboard & Word Cloud |
 
 ---
 
