@@ -1,0 +1,39 @@
+{
+  "tng_sentiment_stream" : {
+    "mappings" : {
+      "properties" : {
+        "actual_sentiment" : {
+          "type" : "keyword"
+        },
+        "cleaned_review" : {
+          "type" : "text"
+        },
+        "predicted_sentiment" : {
+          "type" : "keyword"
+        },
+        "prediction_confidence" : {
+          "type" : "float"
+        },
+        "processed_at" : {
+          "type" : "date"
+        },
+        "rating" : {
+          "type" : "integer"
+        },
+        "review_datetime" : {
+          "type" : "date",
+          "format" : "yyyy-MM-dd HH:mm:ss||strict_date_optional_time||epoch_millis"
+        },
+        "review_id" : {
+          "type" : "keyword"
+        },
+        "review_text" : {
+          "type" : "text"
+        },
+        "source" : {
+          "type" : "keyword"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+# Core Data Processing
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Machine Learning
+scikit-learn>=1.5.0
+joblib>=1.4.0
+
+# NLP
+nltk>=3.9
+
+# Visualization
+matplotlib>=3.9.0
+wordcloud>=1.9.3
+
+# Kafka
+kafka-python>=2.2.0
+
+# Elasticsearch
+elasticsearch>=8.17.0
+
+# Spark
+pyspark>=4.0.0
+
+# Jupyter Notebook
+jupyter>=1.1.0
+ipykernel>=6.29.0
