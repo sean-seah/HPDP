@@ -2,8 +2,6 @@
 
 A real-time streaming sentiment analysis system that continuously processes Touch 'n Go eWallet customer reviews from the Google Play Store using Apache Kafka, Apache Spark Structured Streaming, Elasticsearch, and Kibana.
 
-Developed for **SECP3133 High Performance Data Processing** at Universiti Teknologi Malaysia (UTM). :contentReference[oaicite:1]{index=1}
-
 ---
 
 # Team Members
@@ -21,7 +19,7 @@ Developed for **SECP3133 High Performance Data Processing** at Universiti Teknol
 
 Customer reviews provide valuable feedback for improving digital payment applications. However, analysing thousands of reviews manually is time-consuming and unsuitable for real-time monitoring.
 
-This project develops an end-to-end streaming analytics pipeline that automatically classifies customer reviews into Positive, Neutral, and Negative sentiments. Reviews are streamed through Apache Kafka, processed by Apache Spark Structured Streaming using a trained Naive Bayes model, stored in Elasticsearch, and visualized through Kibana dashboards for continuous sentiment monitoring. :contentReference[oaicite:2]{index=2}
+This project develops an end-to-end streaming analytics pipeline that automatically classifies customer reviews into Positive, Neutral, and Negative sentiments. Reviews are streamed through Apache Kafka, processed by Apache Spark Structured Streaming using a trained Naive Bayes model, stored in Elasticsearch, and visualized through Kibana dashboards for continuous sentiment monitoring.
 
 ---
 
