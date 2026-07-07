@@ -1,4 +1,4 @@
-# Real-Time Sentiment Analysis of TNG eWallet Reviews using Apache Spark and Kafka
+# Real-Time Sentiment Analysis of TNG eWallet Reviews
 
 A real-time streaming sentiment analysis system that continuously processes Touch 'n Go eWallet customer reviews from the Google Play Store using Apache Kafka, Apache Spark Structured Streaming, Elasticsearch, and Kibana.
 
@@ -187,18 +187,6 @@ Project2/
 └── README.md
 └── requirements.txt
 ```
-
----
-
-# Course
-
-**SECP3133 High Performance Data Processing**
-
-Faculty of Computing
-
-Universiti Teknologi Malaysia
-
-Semester 2 2025/2026
 
 ---
 
