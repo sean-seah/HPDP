@@ -270,11 +270,6 @@ python src\make_nst_charts.py
 python src\count_nst.py
 ```
 
-## Report
-
-The final project report is available in the `docs/` folder:
-
-- `docs/Group_ABC_Report_P1.pdf`
 
 ## Ethical Considerations
 
