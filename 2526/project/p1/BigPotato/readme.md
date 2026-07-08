@@ -5,6 +5,8 @@ Our project focuses on building a large-scale web crawling and data processing p
 
 Instead of only collecting data, this project also evaluates how different processing engines perform when handling structured job listing records.
 
+Video Link: https://www.youtube.com/watch?v=p2mPxusa8AY
+
 ---
 
 ## 📌 Project Title
