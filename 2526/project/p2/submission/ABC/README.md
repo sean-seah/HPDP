@@ -182,6 +182,7 @@ Project2/
 │
 ├── reports/
 │   └── Group_ABC_Report_P2.pdf
+|   └── Group_ABC_P2_Presentation_Slide.pdf
 │
 ├── docker-compose.yml
 └── README.md
