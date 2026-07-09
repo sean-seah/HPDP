@@ -1,16 +1,16 @@
 # 🥔 BigPotato | Shopee Real-Time Sentiment High Performance Data Processing Pipeline
 
-This repository contains the project work for **SECP3133 High Performance Data Processing (Project 2)**. [cite_start]Our project focuses on building an end-to-end real-time sentiment analysis data pipeline utilizing customer reviews from **Shopee Malaysia** collected via the Google Play Store[cite: 8, 10, 11, 31, 34].
+This repository contains the project work for **SECP3133 High Performance Data Processing**. Our project focuses on building an end-to-end real-time sentiment analysis data pipeline utilizing customer reviews from **Shopee Malaysia** collected via the Google Play Store.
 
-[cite_start]Instead of traditional batch processing alone, this project implements a production-grade streaming pipeline and comprehensively evaluates system performance differences (throughput, resource usage, latency) between batch and real-time streaming architectures[cite: 30, 39, 48, 685].
+Instead of traditional batch processing alone, this project implements a production-grade streaming pipeline and comprehensively evaluates system performance differences (throughput, resource usage, latency) between batch and real-time streaming architectures.
 
-[cite_start]Video Link: https://youtu.be/vumdt10_g0A [cite: 793]
+Video Link: [https://youtu.be/vumdt10_g0A ](https://youtu.be/vumdt10_g0A)
 
 ---
 
 ## 📌 Project Title
 
-[cite_start]**Shopee Application Real-Time Sentiment Analysis Using Apache Spark and Kafka** [cite: 10, 11]
+**Shopee Application Real-Time Sentiment Analysis Using Apache Spark and Kafka** 
 
 ---
 
@@ -23,45 +23,44 @@ This repository contains the project work for **SECP3133 High Performance Data P
 | Lau Yee Wen             | A23CS0099 |
 | Poh Lok Yee             | A23CS0262 |
 
-[cite_start]*(Source: [cite: 14])*
 
 ---
 
 ## 📝 Project Summary
 
-[cite_start]The core objective of this project is to implement, evaluate, and optimize a highly available, real-time sentiment analysis infrastructure for massive numbers of e-commerce application reviews[cite: 31, 37, 51, 198].
+The core objective of this project is to implement, evaluate, and optimize a highly available, real-time sentiment analysis infrastructure for massive numbers of e-commerce application reviews.
 
 The project pipeline encompasses:
-1. [cite_start]**Data Acquisition:** Scraped target public reviews from Shopee Malaysia's official Google Play Store application[cite: 34, 41, 61].
-2. [cite_start]**NLP Preprocessing:** Rule-based tokenization, lowercase standardization, stop-word filtering (English & Malay), and root-word lemmatization[cite: 35, 44, 78].
-3. [cite_start]**Sentiment Model Selection:** Vectorized text using TF-IDF and trained/evaluated three machine learning classifiers (Multinomial Naive Bayes, Logistic Regression, and Linear SVM)[cite: 36, 101, 127, 134].
-4. [cite_start]**Streaming Architecture Deployment:** Dockerized ecosystem linking a Python Kafka Producer, an Apache Kafka Message Streaming layer, and an Apache Spark Structured Streaming processing frame[cite: 46, 199, 206, 253].
-5. [cite_start]**Storage & BI Analytics:** Structured outputs ingestion into Elasticsearch for real-time Kibana query monitoring and custom multi-page Power BI analytical dashboarding[cite: 38, 47, 210, 382, 384].
-6. [cite_start]**Performance Benchmarking:** Evaluated and compared Batch vs. Streaming workloads regarding latency, computational usage, and system constraints[cite: 39, 48, 685].
+1. **Data Acquisition:** Scraped target public reviews from Shopee Malaysia's official Google Play Store application.
+2. **NLP Preprocessing:** Rule-based tokenization, lowercase standardization, stop-word filtering (English & Malay), and root-word lemmatization.
+3. **Sentiment Model Selection:** Vectorized text using TF-IDF and trained/evaluated three machine learning classifiers (Multinomial Naive Bayes, Logistic Regression, and Linear SVM).
+4. **Streaming Architecture Deployment:** Dockerized ecosystem linking a Python Kafka Producer, an Apache Kafka Message Streaming layer, and an Apache Spark Structured Streaming processing frame.
+5. **Storage & BI Analytics:** Structured outputs ingestion into Elasticsearch for real-time Kibana query monitoring and custom multi-page Power BI analytical dashboarding.
+6. **Performance Benchmarking:** Evaluated and compared Batch vs. Streaming workloads regarding latency, computational usage, and system constraints.
 
 ---
 
 ## 🌐 Target Website & Source
 
-* [cite_start]**Platform:** Google Play Store [cite: 34, 54]
-* [cite_start]**Target Application:** Shopee Malaysia (`com.shopee.my`) [cite: 54, 61]
-* [cite_start]**Data Type:** Public user ratings, metadata, and written textual reviews [cite: 55, 64, 70]
+* **Platform:** Google Play Store 
+* **Target Application:** Shopee Malaysia (`com.shopee.my`) 
+* **Data Type:** Public user ratings, metadata, and written textual reviews 
 
 ---
 
 ## 📂 Data Collected & Attributes
 
-[cite_start]The ingestion tool safely filters out personal credentials (usernames, profile pictures) and retains analytical vectors[cite: 65]:
+The ingestion tool safely filters out personal credentials (usernames, profile pictures) and retains analytical vectors:
 
 | Attribute | Data Type | Description |
 | :--- | :--- | :--- |
-| `Review ID` | String | [cite_start]Unique hash identifier assigned to each individual review [cite: 73] |
-| `Rating` | Integer | [cite_start]Customer experience score ranging from 1 to 5 stars [cite: 74] |
-| `Review Date` | Date | [cite_start]Timestamp of submission [cite: 74] |
-| `App Version` | String | [cite_start]Version string of the Shopee application used by the reviewer [cite: 74] |
-| `Thumbs Up Count` | Integer | [cite_start]Volume of peer-voted helpful feedback marks [cite: 74] |
-| `Original Text` | Text | [cite_start]Raw written textual commentary [cite: 74] |
-| `Cleaned Text` | Text | [cite_start]Extracted target feature generated post-NLP cleaning steps [cite: 87] |
+| `Review ID` | String | Unique hash identifier assigned to each individual review  |
+| `Rating` | Integer | Customer experience score ranging from 1 to 5 stars  |
+| `Review Date` | Date | Timestamp of submission  |
+| `App Version` | String | Version string of the Shopee application used by the reviewer  |
+| `Thumbs Up Count` | Integer | Volume of peer-voted helpful feedback marks  |
+| `Original Text` | Text | Raw written textual commentary  |
+| `Cleaned Text` | Text | Extracted target feature generated post-NLP cleaning steps |
 
 ---
 
@@ -69,50 +68,29 @@ The project pipeline encompasses:
 
 | Description | Value |
 | :--- | :--- |
-| **Raw Reviews Scraped** | [cite_start]10,000 records [cite: 42, 62] |
-| **Final NLP Cleaned Base Records** | [cite_start]6,395 records [cite: 88, 92] |
-| **Class Distribution Balance** | Positive: 3,945 (61.69%) \| Negative: 2,203 (34.45%) \| [cite_start]Neutral: 247 (3.86%) [cite: 121, 122] |
-| **Dataset Format** | [cite_start]Exported CSV formats (`cleaned_data.csv`) [cite: 66, 89] |
+| **Raw Reviews Scraped** | 10,000 records  |
+| **Final NLP Cleaned Base Records** | 6,395 records  |
+| **Class Distribution Balance** | Positive: 3,945 (61.69%) \| Negative: 2,203 (34.45%) \| Neutral: 247 (3.86%)  |
+| **Dataset Format** | Exported CSV formats (`cleaned_data.csv`)  |
 
 ---
 
-## 🔄 Data Processing & Apache Infrastructure Architecture
+## System Architecture
 
 
-                               [ 1. SOURCE LAYER ]
-                       Google Play Store (Shopee Malaysia)
-                                        │
-                                        ▼ (Google Play Scraper)
-                             shopee_my_reviews_raw.csv
-                                        │
-                                        ▼ (NLP Preprocessing Pipeline)
-                                 cleaned_data.csv
-                                        │
-                                        ▼
-                           [ 2. REAL-TIME KAFKA LAYER ]
-                             Kafka Producer (Python)
-                                        │
-                                        ▼ (JSON Messages)
-                         Kafka Broker ("sentiment-topic")
-                                        │
-                                        ▼ (Micro-batches Ingestion)
-                           [ 3. STREAM PROCESSING LAYER ]
-                         Apache Spark Structured Streaming
-                                        │
-                      ┌─────────────────┴─────────────────┐
-                      │ (Loads Best Trained MNB Model)    │
-                      ▼                                   ▼ (Feature Extraction)
-            [ Model Inference ]                   [ Adds Timestamps ]
-                      │                                   │
-                      └─────────────────┬─────────────────┘
-                                        │
-                                        ▼ (Dual-Sink Stream Output)
-                   ┌────────────────────┴────────────────────┐
-                   ▼                                         ▼
-    [ 4. STORAGE & VALIDATION LAYER ]             [ 5. VISUALIZATION LAYER ]
-          Elasticsearch Cluster                    Power BI / Kibana Dashboards
-    (sentiment_predictions Index)                 (Real-Time Analytics Overview)
-
+    Shopee Malaysia Reviews CSV (cleaned_data.csv)
+                          ↓
+              Kafka Producer (Python)
+                          ↓
+           Kafka Topic: sentiment-topic
+                          ↓
+          Apache Spark Structured Streaming
+                          ↓
+    Loads Persistent TF-IDF Vectorizer + MNB Model Pipeline
+                          ↓
+       Elasticsearch Index + Local CSV Output (Dual-Sink)
+                          ↓
+             Kibana / Power BI Dashboard
 
 ## 🧹 Data Cleaning & NLP Pipeline
 
@@ -168,6 +146,7 @@ Both modes were evaluated over the full set of 6,395 records to observe pipeline
 | **System Throughput** | **16,116.71 rec/sec** | 702.92 rec/sec |
 | **CPU Utilization Rate** | 95.90% (Short intensive burst) | **6.01% (Evenly distributed load)** |
 | **Peak Memory Consumption** | **236.23 MB** | 240.29 MB |
+| **Classification accuracy** | 88.19% | 95% (based on 20 streaming sample) |
 | **Elasticsearch Write Status** | Not Applicable | 100% Success (0 Failed Docs) |
 
 ### 🔍 Core Structural Findings
@@ -178,52 +157,53 @@ Both modes were evaluated over the full set of 6,395 records to observe pipeline
 
 ## 📁 Repository Structure
 
-```text
-BigPotato/
-│
-├── dashboard/                      # Power BI Dashboard .pbix source files
-├── data/
-│   ├── raw_data.csv                 # Raw crawled review records from Google Play
-│   └── cleaned_data.csv            # Final NLP standardized dataset
-│
-├── kafka_spark_pipeline/           # Real-time streaming source scripts
-│   ├── docker-compose.yml          # Infrastructure setup for Zookeeper, Kafka, ES, Kibana
-│   ├── kafka_producer.py           # Simulates live review ingestion streams
-│   ├── spark_streaming.py
-│   ├── test_model.py   
-│   └── streaming_prediction.csv
-│
-├── models/
-│   └── best_sentiment_model.pkl                         
-│
-├── notebooks/                     
-│   ├── preprocessing.ipynb
-│   ├── model_training.ipynb
-│   └── preprocessingAndModelTraining
-│
-├── reports/
-│   └── HPDP_Project2_Report.pdf    # Full Project Documentation Report
-│   └── Project 2 Slides.pdf
-│
-└── README.md
+```
+  BigPotato/
+  │
+  ├── dashboard/                      # Power BI Dashboard .pbix source files
+  ├── data/
+  │   ├── raw_data.csv                 # Raw crawled review records from Google Play
+  │   └── cleaned_data.csv            # Final NLP standardized dataset
+  │
+  ├── kafka_spark_pipeline/           # Real-time streaming source scripts
+  │   ├── docker-compose.yml          # Infrastructure setup for Zookeeper, Kafka, ES, Kibana
+  │   ├── kafka_producer.py           # Simulates live review ingestion streams
+  │   ├── spark_streaming.py
+  │   ├── test_model.py   
+  │   └── streaming_prediction.csv
+  │
+  ├── models/
+  │   └── best_sentiment_model.pkl                         
+  │
+  ├── notebooks/                     
+  │   ├── preprocessing.ipynb
+  │   ├── model_training.ipynb
+  │   └── preprocessingAndModelTraining
+  │
+  ├── reports/
+  │   └── HPDP_Project2_Report.pdf    # Full Project Documentation Report
+  │   └── Project 2 Slides.pdf
+  │
+  └── README.md
 
-
-👩‍💻 Team Members & Roles 
-Based on our established data engineering roles, responsibilities were divided as follows:
-
-Based on our updated workflow diagram, system responsibilities are designated as follows:
-* **Poh Lok Yee (Data Acquisition & NLP Preprocessing Engineer):** Orchestrated targeted crawling loops via automated collection, built the validation workflow, and managed multilingual tokenization and stop-word rules to generate the baseline `cleaned_data.csv`.
-* **Cheryl Cheong Kah Voon (Machine Learning Engineer):** Engineered the core machine learning workspace, evaluated multiple linear and probabilistic models, handled vectorization tuning, and exported the optimized Multinomial Naive Bayes model pipeline.
-* **Lau Yee Wen (Big Data Pipeline Engineer):** Designed the containerized multi-node ecosystem via Docker Compose, built the automated Kafka stream ingestion layer, and coordinated the PySpark Structured Streaming continuous predictive loop.
-* **Chau Ying Jia (Dashboard & Performance Engineer):** Connected deep storage architectures into presentation layers, constructed interactive Power BI visual models, conducted throughput/latency comparative benchmarks, and summarized real-world system behavioral insights.
-
+```
 ---
 
-🎓 Course Information
-Course: SECP3133 High Performance Data Processing Section 2
+## 👥 Team Members & Roles 
 
-Lecturer: Dr. Seah Choon Sean
+Based on our updated workflow diagram, system responsibilities are designated as follows:
 
-Faculty: Faculty of Computing, Universiti Teknologi Malaysia
+| Member | Main Responsibility |
+| :--- | :--- |
+| **Poh Lok Yee** | Conducted data acquisition via Google Play Scraper and built the rule-based NLP text cleaning pipeline. |
+| **Cheryl Cheong Kah Voon** | Built the machine learning workspace, evaluated classifiers, and exported the optimized MNB pipeline. |
+| **Lau Yee Wen** | Architected the containerized infrastructure and coordinated the real-time Kafka-Spark streaming loop. |
+| **Chau Ying Jia** | Developed interactive Power BI dashboards and conducted Batch vs. Streaming performance benchmarking. |
+---
 
-Semester: Semester 2 2025/2026
+## 🎓 Course Information
+
+* **Course:** SECP3133 High Performance Data Processing Section 2
+* **Lecturer:** Dr. Seah Choon Sean
+* **Faculty:** Faculty of Computing, Universiti Teknologi Malaysia
+* **Semester:** Semester 2 2025/2026
