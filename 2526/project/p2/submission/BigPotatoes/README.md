@@ -183,21 +183,47 @@ BigPotato/
 │
 ├── dashboard/                      # Power BI Dashboard .pbix source files
 ├── data/
-│   ├── shopee_my_reviews_raw.csv   # Raw crawled review records from Google Play
+│   ├── raw_data.csv                 # Raw crawled review records from Google Play
 │   └── cleaned_data.csv            # Final NLP standardized dataset
 │
 ├── kafka_spark_pipeline/           # Real-time streaming source scripts
 │   ├── docker-compose.yml          # Infrastructure setup for Zookeeper, Kafka, ES, Kibana
 │   ├── kafka_producer.py           # Simulates live review ingestion streams
-│   └── spark_streaming_job.py      # Micro-batch execution and ML classification script
+│   ├── spark_streaming.py
+│   ├── test_model.py   
+│   └── streaming_prediction.csv
 │
-├── models/                         # Serialized pipeline exports (TF-IDF & trained MNB model)
+├── models/
+│   └── best_sentiment_model.pkl                         
 │
-├── notebooks/                      # Exploratory Data Analysis & Model Training code
-│   ├── eda_and_preprocessing.ipynb
-│   └── model_training_evaluation.ipynb
+├── notebooks/                     
+│   ├── preprocessing.ipynb
+│   ├── model_training.ipynb
+│   └── preprocessingAndModelTraining
 │
 ├── reports/
 │   └── HPDP_Project2_Report.pdf    # Full Project Documentation Report
+│   └── Project 2 Slides.pdf
 │
 └── README.md
+
+
+👩‍💻 Team Members & Roles 
+Based on our established data engineering roles, responsibilities were divided as follows:
+
+Based on our updated workflow diagram, system responsibilities are designated as follows:
+* **Poh Lok Yee (Data Acquisition & NLP Preprocessing Engineer):** Orchestrated targeted crawling loops via automated collection, built the validation workflow, and managed multilingual tokenization and stop-word rules to generate the baseline `cleaned_data.csv`.
+* **Cheryl Cheong Kah Voon (Machine Learning Engineer):** Engineered the core machine learning workspace, evaluated multiple linear and probabilistic models, handled vectorization tuning, and exported the optimized Multinomial Naive Bayes model pipeline.
+* **Lau Yee Wen (Big Data Pipeline Engineer):** Designed the containerized multi-node ecosystem via Docker Compose, built the automated Kafka stream ingestion layer, and coordinated the PySpark Structured Streaming continuous predictive loop.
+* **Chau Ying Jia (Dashboard & Performance Engineer):** Connected deep storage architectures into presentation layers, constructed interactive Power BI visual models, conducted throughput/latency comparative benchmarks, and summarized real-world system behavioral insights.
+
+---
+
+🎓 Course Information
+Course: SECP3133 High Performance Data Processing Section 2
+
+Lecturer: Dr. Seah Choon Sean
+
+Faculty: Faculty of Computing, Universiti Teknologi Malaysia
+
+Semester: Semester 2 2025/2026
