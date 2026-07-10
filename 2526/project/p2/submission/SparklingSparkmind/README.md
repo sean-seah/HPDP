@@ -30,6 +30,61 @@ Real-time sentiment analysis pipeline on Malaysian-relevant text data, using:
 - **Collection tool:** 
 - **Approx. volume collected:** 
 
+
+## System Workflow
+
+```
+┌─────────────────┐      ┌───────────────┐      ┌────────────────────────┐
+│  cleaned_data    │      │     Kafka      │      │   Spark Structured     │
+│  .csv            │─────▶│  topic:        │─────▶│   Streaming (PySpark)  │
+│  (offline, from  │      │  sentiment-    │      │                        │
+│  preprocessing)  │      │  input         │      │  - parses JSON events  │
+└─────────────────┘      └───────────────┘      │  - loads pre-trained   │
+                                                    │    Naive Bayes +      │
+                                                    │    TF-IDF vectorizer  │
+                                                    │  - predicts sentiment │
+                                                    │    + confidence score │
+                                                    │  - runs via broadcast │
+                                                    │    variables & UDFs   │
+                                                    └───────────┬────────────┘
+                                                                │ foreachBatch
+                                                                ▼
+                                                    ┌────────────────────────┐
+                                                    │     Elasticsearch      │
+                                                    │  index:                │
+                                                    │  sentiment-predictions │
+                                                    │  (bulk indexed via     │
+                                                    │  REST API)             │
+                                                    └───────────┬────────────┘
+                                                                │
+                                                                ▼
+                                                    ┌────────────────────────┐
+                                                    │        Kibana          │
+                                                    │  dashboards: pie chart, │
+                                                    │  sentiment-over-time,  │
+                                                    │  word clouds           │
+                                                    └────────────────────────┘
+```
+
+**Flow explained:**
+1. **Offline stage:** Raw reviews are cleaned/preprocessed (`notebooks/preprocessing.ipynb`) and models are trained and compared (`model_training.ipynb`), producing `naive_bayes_model.pkl` (TF-IDF + Naive Bayes) and `lstm_model.keras`.
+2. **Ingestion:** `kafka_producer.py` reads `data/cleaned_data.csv` row-by-row and publishes each review as a JSON message to the Kafka topic `sentiment-input`.
+3. **Streaming inference:** `kafka_spark_pipeline/spark_streaming.py` consumes the topic with Spark Structured Streaming, parses each record against a defined schema, and applies the loaded Naive Bayes + TF-IDF model (broadcast to all Spark workers) via a UDF to predict sentiment and confidence in real time.
+4. **Storage:** Each micro-batch of predictions is sent to Elasticsearch's `_bulk` REST endpoint and indexed into `sentiment-predictions`.
+5. **Visualization:** Kibana connects to Elasticsearch and renders live dashboards (sentiment distribution, sentiment over time, word clouds) from the indexed data.
+
+## Technology Used
+| Layer | Technology |
+|---|---|
+| Streaming ingestion | Apache Kafka (Confluent images) + Zookeeper |
+| Stream processing | Apache Spark Structured Streaming (PySpark) |
+| Sentiment models | scikit-learn (Naive Bayes + TF-IDF), TensorFlow/Keras (LSTM) |
+| Storage / indexing | Elasticsearch |
+| Visualization | Kibana |
+| Containerization | Docker & Docker Compose |
+| Language / libraries | Python, pandas, kafka-python, requests |
+| Development | Jupyter Notebook |
+
 ## Models Compared
 | Model | Category | Library |
 |---|---|---|
@@ -40,25 +95,52 @@ Evaluated using accuracy, precision, recall, F1 score, and confusion matrix (70/
 
 ## How to Run
 
+### 1. Install dependencies
 ```bash
-# 1. Install dependencies
 pip install -r requirements.txt
+```
 
-# 2. Start Kafka broker and create topic
-# [add exact commands once Member 3 finalizes setup]
+### 2. Start the infrastructure (Kafka, Zookeeper, Elasticsearch, Kibana)
+```bash
+cd kafka_spark_pipeline
+docker-compose up -d
+```
+This spins up:
+- `zookeeper` (port 2181)
+- `kafka` (port 9092)
+- `elasticsearch` (port 9200)
+- `kibana` (port 5601)
 
-# 3. Run preprocessing notebook
+Wait until all containers are healthy before continuing (`docker ps` to check).
+
+### 3. Run preprocessing and train the models (if not already done)
+```bash
 jupyter notebook notebooks/preprocessing.ipynb
-
-# 4. Train models
 jupyter notebook model_training.ipynb
+```
+This produces `data/cleaned_data.csv`, `naive_bayes_model.pkl`, and `lstm_model.keras` used by the streaming job.
 
-# 5. Start the Spark streaming job
-spark-submit kafka_spark_pipeline/spark_streaming.py
+### 4. Start the Kafka producer
+```bash
+cd kafka_spark_pipeline
+python kafka_producer.py
+```
+This reads `data/cleaned_data.csv` and streams each review as a JSON message to the Kafka topic `sentiment-input`.
 
-# 6. View dashboard
-# Open kafka_spark_pipeline/dashboard/dashboard_prototype.html in a browser
-# (or Kibana/Superset URL once storage layer is connected)
+### 5. Start the Spark Structured Streaming job
+```bash
+cd kafka_spark_pipeline
+spark-submit spark_streaming.py
+```
+This consumes from `sentiment-input`, runs real-time Naive Bayes predictions, and writes each batch to Elasticsearch's `sentiment-predictions` index via REST API.
+
+### 6. View the dashboard
+- Open Kibana at [http://localhost:5601](http://localhost:5601) and import `kibana_visualizations.ndjson` for the pre-built dashboards, **or**
+- Open `kafka_spark_pipeline/dashboard/dashboard_prototype.html` directly in a browser for the static prototype view.
+
+### 7. Stop the infrastructure
+```bash
+docker-compose down
 ```
 
 ## Repository Structure
