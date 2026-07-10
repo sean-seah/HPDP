@@ -64,6 +64,10 @@ p1/sparkling-sparkmind/
 │   ├── main_crawler (4).ipynb      # Web crawler for MyFutureJobs
 │   ├── clean_data.ipynb            # Data cleaning and transformation
 │   └── optimize_pipeline.ipynb     # Baseline, Multiprocessing, and Polars benchmarking
+|
+├── p2/
+│   ├── job_mp_worker.py         
+│   ├── performance_comparison.png
 │
 ├── report/
 │   ├── Final_Report.pdf
