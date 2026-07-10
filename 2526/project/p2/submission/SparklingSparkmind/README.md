@@ -74,8 +74,14 @@ HPDP/2526/project/Sparkling Sparkmind/
 ├── model_training.ipynb
 ├── kafka_spark_pipeline/
 │   ├── spark_streaming.py
+│   ├── docker-compose.yml
+│   ├── kafka_producer.py
+│   ├── lstm_model.keras
+│   ├── lstm_tokenizer.pkl
+│   ├── naive_bayes_model.pkl
 │   ├── dashboard/
 │   └── elastic_mappings.json
+|
 ├── kibana_visualizations.ndjson
 ├── reports/
 │   └── final_report.pdf
