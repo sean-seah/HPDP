@@ -13,6 +13,9 @@
 | SAFIYA NURSYAHADAH BINTI MASNOOR | A23CS0176 | Pipeline Engineer (Kafka + Spark + Storage) |
 | AIN NURNABILA BINTI MOHD AZHAR | A23CS0207 | Visualization & Reporting Engineer |
 
+## Presentation Link
+[Click here](https://youtu.be/ivEmCZQMBds?si=yJZh569muOXt-5wK)
+
 ## Project Summary
 
 Real-time sentiment analysis pipeline on Malaysian-relevant text data, using:
@@ -103,8 +106,8 @@ Mapped to the 5 required submission items (Section 7 of the brief):
 - [✅] Storage layer (Elasticsearch/Druid) connected
 - [✅] Batch vs. streaming comparison complete
 - [✅] Dashboards built (pie chart, sentiment-over-time, word clouds)
-- [ ] Final report compiled
-- [ ] Presentation slides finalized
+- [✅] Final report compiled
+- [✅] Presentation slides finalized
 
 ## Academic Integrity
 
