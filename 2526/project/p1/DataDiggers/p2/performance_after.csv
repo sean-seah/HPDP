@@ -1,0 +1,2 @@
+technique,total_time_sec,records_processed,throughput_rec_per_sec,memory_mb
+"Optimized (multiprocessing, 2 workers)",5.185490608215332,101212,19518.30745574018,122.125
