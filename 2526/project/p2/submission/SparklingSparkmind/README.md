@@ -33,6 +33,7 @@ Real-time sentiment analysis pipeline on Malaysian-relevant text data, using:
 
 ## System Workflow
 
+```
 Raw Review Dataset
         |
         v
@@ -61,6 +62,7 @@ Elasticsearch Index: sentiment-predictions
         |
         v
 Kibana Dashboard
+
 ```
 
 ## Technology Used
