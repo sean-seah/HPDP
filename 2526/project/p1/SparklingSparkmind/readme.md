@@ -163,11 +163,11 @@ As Table 2 shows, **Polars was the clear winner**, roughly 4x faster than the Pa
 
 ## 12. Deliverables Checklist
 
-- [x] Final Report (PDF)
-- [x] Source Code (crawler, cleaning, optimization notebooks)
-- [x] Cleaned Dataset (112,499 records, CSV/XLSX)
-- [x] Performance Comparison (tables + charts)
-- [x] Presentation Slides
+- [✅] Final Report (PDF)
+- [✅] Source Code (crawler, cleaning, optimization notebooks)
+- [✅] Cleaned Dataset (112,499 records, CSV/XLSX)
+- [✅] Performance Comparison (tables + charts)
+- [✅] Presentation Slides
 
 ## 13. Academic Integrity Note
 
