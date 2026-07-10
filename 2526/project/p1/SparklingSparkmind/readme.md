@@ -55,7 +55,7 @@ We collected over 120,000 raw job listings, cleaned them down to **112,499 valid
 p1/sparkling-sparkmind/
 │
 ├── data/
-│   ├── member2myfuturejob.json     # Raw crawled data (~120,000+ records)
+│   ├── raw_data.json     # Raw crawled data (~120,000+ records)
 │   ├── cleaned_data.csv            # Final cleaned dataset (112,499 records)
 │   ├── cleaned_data.xlsx           # Cleaned dataset, Excel format
 │   └── optimize_data.csv           # Supplementary benchmark notes
