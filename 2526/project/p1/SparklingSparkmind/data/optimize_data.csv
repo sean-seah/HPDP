@@ -1,0 +1,5 @@
+HPC Performance Dimension,Slow Baseline Model (Sync requests),Optimized Engine (Async Concurrency)
+Execution Time (Seconds),917.05,5.83
+Throughput (Pages / Sec),0.22,34.32
+Average CPU Utilization (%),14.6,33.5
+Volatile Memory Overhead (MB),0.7,12.61
