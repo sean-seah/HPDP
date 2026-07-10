@@ -26,9 +26,9 @@ Real-time sentiment analysis pipeline on Malaysian-relevant text data, using:
 
 ## Data Source
 
-- **Source:** 
-- **Collection tool:** 
-- **Approx. volume collected:** 
+- **Source:** Shopee Malaysia Google Play Store reviews (com.shopee.my)
+- **Collection tool:** google-play-scraper Python library, executed in Google Colaboratory
+- **Approx. volume collected:** 3,001 raw reviews → 1,707 records after preprocessing
 
 
 ## System Workflow
