@@ -14,6 +14,9 @@
 | Farra Nurzahin Binti Zaharil Anuar | A23CS0079 |
 | Dayang Farah Farzana Binti Abang Idham | A23CS0071 |
 
+## Project Presentation Link
+[Click here](https://youtu.be/J2cmHaFDi_4?si=uMqFGFMDTVEyOa6k)
+
 ## 1. Project Overview
 
 This project builds a complete data pipeline that crawls, cleans, and processes job vacancy listings from **MyFutureJobs** (myfuturejobs.gov.my), a Malaysian government job portal. The goal isn't just to collect a large dataset. It's to show, with real numbers, how different processing strategies hold up once the data gets big.
@@ -165,3 +168,4 @@ As Table 2 shows, **Polars was the clear winner**, roughly 4x faster than the Pa
 ## 13. Academic Integrity Note
 
 All data was collected from publicly available job listings on MyFutureJobs, with crawl delays applied to avoid overloading the server. No login-protected content or personal applicant data was accessed at any point.
+
