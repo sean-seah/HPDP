@@ -33,45 +33,35 @@ Real-time sentiment analysis pipeline on Malaysian-relevant text data, using:
 
 ## System Workflow
 
+Raw Review Dataset
+        |
+        v
+Data Cleaning and Preprocessing (notebooks/preprocessing.ipynb)
+        |
+        v
+TF-IDF Feature Extraction
+        |
+        v
+Model Training and Evaluation (Naive Bayes + LSTM)
+        |
+        v
+Kafka Producer (kafka_producer.py)
+        |
+        v
+Kafka Topic: sentiment-input
+        |
+        v
+Spark Structured Streaming (spark_streaming.py)
+        |
+        v
+Sentiment Prediction (Naive Bayes + TF-IDF, via broadcast UDF)
+        |
+        v
+Elasticsearch Index: sentiment-predictions
+        |
+        v
+Kibana Dashboard
 ```
-┌─────────────────┐      ┌───────────────┐      ┌────────────────────────┐
-│  cleaned_data    │      │     Kafka      │      │   Spark Structured     │
-│  .csv            │─────▶│  topic:        │─────▶│   Streaming (PySpark)  │
-│  (offline, from  │      │  sentiment-    │      │                        │
-│  preprocessing)  │      │  input         │      │  - parses JSON events  │
-└─────────────────┘      └───────────────┘      │  - loads pre-trained   │
-                                                    │    Naive Bayes +      │
-                                                    │    TF-IDF vectorizer  │
-                                                    │  - predicts sentiment │
-                                                    │    + confidence score │
-                                                    │  - runs via broadcast │
-                                                    │    variables & UDFs   │
-                                                    └───────────┬────────────┘
-                                                                │ foreachBatch
-                                                                ▼
-                                                    ┌────────────────────────┐
-                                                    │     Elasticsearch      │
-                                                    │  index:                │
-                                                    │  sentiment-predictions │
-                                                    │  (bulk indexed via     │
-                                                    │  REST API)             │
-                                                    └───────────┬────────────┘
-                                                                │
-                                                                ▼
-                                                    ┌────────────────────────┐
-                                                    │        Kibana          │
-                                                    │  dashboards: pie chart, │
-                                                    │  sentiment-over-time,  │
-                                                    │  word clouds           │
-                                                    └────────────────────────┘
-```
-
-**Flow explained:**
-1. **Offline stage:** Raw reviews are cleaned/preprocessed (`notebooks/preprocessing.ipynb`) and models are trained and compared (`model_training.ipynb`), producing `naive_bayes_model.pkl` (TF-IDF + Naive Bayes) and `lstm_model.keras`.
-2. **Ingestion:** `kafka_producer.py` reads `data/cleaned_data.csv` row-by-row and publishes each review as a JSON message to the Kafka topic `sentiment-input`.
-3. **Streaming inference:** `kafka_spark_pipeline/spark_streaming.py` consumes the topic with Spark Structured Streaming, parses each record against a defined schema, and applies the loaded Naive Bayes + TF-IDF model (broadcast to all Spark workers) via a UDF to predict sentiment and confidence in real time.
-4. **Storage:** Each micro-batch of predictions is sent to Elasticsearch's `_bulk` REST endpoint and indexed into `sentiment-predictions`.
-5. **Visualization:** Kibana connects to Elasticsearch and renders live dashboards (sentiment distribution, sentiment over time, word clouds) from the indexed data.
 
 ## Technology Used
 | Layer | Technology |
