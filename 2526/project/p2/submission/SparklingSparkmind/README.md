@@ -62,7 +62,6 @@ Elasticsearch Index: sentiment-predictions
         |
         v
 Kibana Dashboard
-
 ```
 
 ## Technology Used
