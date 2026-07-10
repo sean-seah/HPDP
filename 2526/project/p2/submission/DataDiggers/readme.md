@@ -9,8 +9,7 @@
 | LUBNA AL HAANI BINTI RADZUAN | A23CS0107 |  Pipeline Engineer |
 | NURUL IKA SYAFINY BINTI AZHAR | A23CS0164 | Visualization & Performance Engineer |
 
-Video Presentation: [youtube link]( )
-Slide Presentation: [Slide]( )
+Video Presentation: [youtube link]( ) <br> Slide Presentation: [Slide]( )
 
 
 ## 1. Overview
