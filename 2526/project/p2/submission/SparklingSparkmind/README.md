@@ -95,7 +95,7 @@ Mapped to the 5 required submission items (Section 7 of the brief):
 
 | # | Deliverable | Status | Location |
 |---|---|---|---|
-| 1 | Final Report (PDF) | In progress | `reports/final_report.pdf` |
+| 1 | Final Report (PDF) | Done ✅ | `reports/final_report.pdf` |
 | 2 | Source Code | Done ✅ | `kafka_spark_pipeline/`, `notebooks/`, `model_training.ipynb` |
 | 3 | Dashboard + Dataset | Done ✅ | `kafka_spark_pipeline/dashboard/`, `data/cleaned_data.csv` |
 | 4 | Model Comparison |Done ✅ | `model_training.ipynb`, `reports/final_report.pdf` (Section 3) |
