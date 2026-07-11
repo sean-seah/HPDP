@@ -216,19 +216,22 @@ The project demonstrates several important observations:
 DataDiggers/
 │
 ├── data/
-│   ├── raw_data/
-│   └── cleaned_data/
+│   ├── cleaned_data.rar
+│   ├── raw_data.zip
+│   └── raw_data_preview.json
 │
-├── crawler/
-│   ├── crawler.py
-│   └── crawler_optimized.py
+├── p1/
+│   ├── clean_data.ipynb
+│   ├── main_crawler.ipynb
+│   └── optimize_pipeline.ipynb
 │
-├── processing/
-│   ├── clean_data.py
-│   └── optimize_pipeline.py
+├── p2/
+│   ├── evaluation_charts.ipynb
+│   ├── performance_after.csv
+│   └── performance_before.csv
 │
 ├── report/
-│   ├── Final_Report.pdf
+│   ├── DataDiggers_Project1Report_HPDP.pdf
 │   └── Presentation_Slides.pdf
 │
 ├── README.md
