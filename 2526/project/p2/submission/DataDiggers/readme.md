@@ -9,7 +9,7 @@
 | LUBNA AL HAANI BINTI RADZUAN | A23CS0107 |  Pipeline Engineer |
 | NURUL IKA SYAFINY BINTI AZHAR | A23CS0164 | Visualization & Performance Engineer |
 
-Video Presentation: [youtube link]( ) <br> Slide Presentation: [Slide]( )
+Video Presentation: [youtube link](https://youtu.be/9sCnXOxTsr0) <br> Slide Presentation: [Slide](https://github.com/sean-seah/HPDP/blob/main/2526/project/p2/submission/DataDiggers/reports/DataDiggers_P2_SlidePresentation.pdf )
 
 
 ## 1. Overview
@@ -91,6 +91,7 @@ HPDP/2526/project/p2/submission/DataDiggers/
 ├── kibana_visualizations.ndjson
 |
 ├── reports/
+|   ├── DataDiggers_P2_SlidePresentation.pdf
 │   └── final_report.pdf
 |
 ├── presentation_slides.pdf
