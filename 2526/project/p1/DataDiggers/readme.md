@@ -232,7 +232,7 @@ DataDiggers/
 │
 ├── report/
 │   ├── DataDiggers_Project1Report_HPDP.pdf
-│   └── Presentation_Slides.pdf
+│   └── DataDiggers_HPDP_Project 1_Presentation Slides.pdf
 │
 ├── README.md
 └── requirements.txt
