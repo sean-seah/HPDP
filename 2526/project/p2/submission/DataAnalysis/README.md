@@ -5,7 +5,10 @@
 2. Choh Jing Yi
 3. Lee Yin Shen
 4. Tan Zhi Ming
-   
+
+## Video Presentation
+- https://youtu.be/VIeWSsURQiE
+  
 ## Project Overview
 
 This project implements a real-time sentiment analysis pipeline for Malaysian telecommunication app reviews. The system uses Google Play review data from Malaysian telco providers such as Celcom, Maxis, Digi, and U Mobile.
